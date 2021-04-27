@@ -13,4 +13,4 @@ Some custom hints with control on js side
 `addHint(target, text, position)`  
 target - your HTML element you want hint to add to  
 text - text of hint  
-position - where hint will be positioned related to element  
+position - where hint will be positioned related to the element  
