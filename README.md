@@ -10,7 +10,7 @@ Some custom hints with control on js side
 3. Call a function `addHint`
 
 # addHint
-addHint(target, text, position).
-target - your HTML element you want hint to add to.
-text - text of hint.
-position - where hint will be positioned related to element.
+addHint(target, text, position)  
+target - your HTML element you want hint to add to  
+text - text of hint  
+position - where hint will be positioned related to element  
