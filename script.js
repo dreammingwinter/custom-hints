@@ -14,9 +14,9 @@ addHint(hinta, 'Right', 'right')
 addHint(hinta, 'Bottom', 'bottom')
 addHint(hinta, 'Left', 'left')
 
-function addHint(target, text, direction) {
+function addHint(target, text, position) {
     target.style.position = 'relative'
-    const hint = generateHint(text, direction)
+    const hint = generateHint(text, position)
     target.appendChild(hint)
 
     target.addEventListener('mouseenter', () => {
@@ -28,14 +28,14 @@ function addHint(target, text, direction) {
     })
 }
 
-function generateHint(text, direction) {
+function generateHint(text, position) {
     const hintEl = document.createElement('div')
     const arrowEl = document.createElement('span')
     const textEl = document.createElement('div')
 
     hintEl.classList.add('hint')
     
-    switch (direction) {
+    switch (position) {
         case 'top': hintEl.classList.add('hint-top'); break
         case 'bottom': hintEl.classList.add('hint-bottom'); break
         case 'left': hintEl.classList.add('hint-left'); break
